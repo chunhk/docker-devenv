@@ -1,0 +1,30 @@
+set encoding=utf-8
+"NeoBundle Scripts-----------------------------
+
+if &compatible
+  set nocompatible               " Be iMproved
+endif
+
+" Required:
+set runtimepath+=/home/devuser/.vim/bundle/neobundle.vim/
+
+" Required:
+call neobundle#begin(expand('/home/devuser/.vim/bundle'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Install YouCompleteMe
+NeoBundle 'Valloric/YouCompleteMe'
+
+" Required:
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+"End NeoBundle Scripts-------------------------
